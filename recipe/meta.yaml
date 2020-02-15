@@ -20,8 +20,8 @@ requirements:
     - python
     - pip
   run:
-    - python
-    - aiormq ~=2.3
+    - python>3.5.*
+    - aiormq>=3.2
     - yarl
     - typing_extensions  # [py36]
 
