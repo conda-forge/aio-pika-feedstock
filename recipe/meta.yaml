@@ -1,5 +1,5 @@
 {% set name = "aio-pika" %}
-{% set version = "6.4.3 %}
+{% set version = "6.4.3" %}
 
 package:
   name: {{ name|lower }}
