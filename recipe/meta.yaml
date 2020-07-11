@@ -1,5 +1,5 @@
 {% set name = "aio-pika" %}
-{% set version = "6.5.0" %}
+{% set version = "6.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
 
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 81157bd0a9c03c0458ce02602b38185a705faf12a42f598e55cb8569e778cb58
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c4cbbeb85b3c7bf81bc127371846cd949e6231717ce1e6ac7ee1dd5ede21f866
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py2k or py35]
+  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py2k or py35]
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'aio-pika is a pure python AMQP client library'
+  summary: aio-pika is a pure python AMQP client library
   description: |
     aio-pika is a pure python AMQP client library
   doc_url: https://github.com/mosquito/aio-pika
