@@ -1,5 +1,5 @@
 {% set name = "aio-pika" %}
-{% set version = "6.4.0" %}
+{% set version = "6.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
 
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 03edc79ea9c27625b3eff07dd237def8261ff2c64e9b5c49c7b99bad52358cb4
+  sha256: fa32e33b4b7d0804dcf439ae6ff24d2f0a83d1ba280ee9f555e647d71d394ff5
 
 build:
   number: 0
