@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - aiormq >=3.2.0,<4
+    - aiormq >=3.2.3,<4
     - yarl
 
 test:
