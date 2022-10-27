@@ -20,9 +20,10 @@ requirements:
     - python
     - pip
   run:
-    - python >=3.6
-    - aiormq >=3.2.3,<4
+    - python >=3.7
+    - aiormq >=6.4,<7
     - yarl
+    - typing_extensions # [py37]
 
 test:
   imports:
