@@ -1,11 +1,11 @@
-About aio-pika
-==============
+About aio-pika-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aio-pika-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mosquito/aio-pika
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aio-pika-feedstock/blob/main/LICENSE.txt)
 
 Summary: aio-pika is a pure python AMQP client library
 
