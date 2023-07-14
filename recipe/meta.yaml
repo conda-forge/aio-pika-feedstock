@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python
-    - aiormq >=6.4,<7
+    - aiormq >=6.7.5,<7
     - yarl
     - typing_extensions  # [py<=37]
 
