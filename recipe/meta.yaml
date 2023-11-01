@@ -11,13 +11,12 @@ source:
   sha256: 230c1087e089e62a590fae95b77ccda053331d3c745bca067d274d76ffceda27
 
 build:
-  number: 1
+  number: 2
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - poetry
   host:
     - python
