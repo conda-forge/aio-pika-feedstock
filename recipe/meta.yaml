@@ -27,6 +27,7 @@ requirements:
     - python
     - aiormq >=6.7.5,<7
     - yarl
+    - exceptiongroup >=1.0.0,<2.0.0
     - typing_extensions  # [py<=37]
 
 test:
