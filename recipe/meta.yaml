@@ -1,5 +1,5 @@
 {% set name = "aio-pika" %}
-{% set version = "9.5.4" %}
+{% set version = "9.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
 
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5a1bad96a75fa5ac3aa5b2bbd3eca971ea9abda70693e4334e6e629639f8a8fc
+  sha256: 3d2f25838860fa7e209e21fc95555f558401f9b49a832897419489f1c9e1d6a4
 
 build:
   number: 0
