@@ -11,7 +11,7 @@ source:
   sha256: 3d2f25838860fa7e209e21fc95555f558401f9b49a832897419489f1c9e1d6a4
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -25,14 +25,19 @@ requirements:
     - poetry
   run:
     - python
-    - aiormq >=6.7.5,<7
+    - aiormq >=6.8,<7
     - yarl
     - exceptiongroup >=1.0.0,<2.0.0
-    - typing_extensions  # [py<=37]
+    - typing_extensions  # [py<310]
 
 test:
+  requires:
+    - python
+    - pip
   imports:
     - aio_pika
+  commands:
+    - pip check
 
 about:
   home: https://github.com/mosquito/aio-pika
