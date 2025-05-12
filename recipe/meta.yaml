@@ -1,6 +1,5 @@
 {% set name = "aio-pika" %}
 {% set version = "9.5.5" %}
-{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
