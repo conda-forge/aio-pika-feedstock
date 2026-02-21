@@ -1,5 +1,5 @@
 {% set name = "aio-pika" %}
-{% set version = "9.5.8" %}
+{% set version = "9.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
 
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7c36874115f522bbe7486c46d8dd711a4dbedd67c4e8a8c47efe593d01862c62
+  sha256: 7cc15ee603d3cc8899c4272b359e343303e0bc4f194da529bbfc84fb934c791e
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry
+    - uv-build
   run:
     - python >={{ python_min }}
     - aiormq >=6.8,<7
