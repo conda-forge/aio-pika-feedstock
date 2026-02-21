@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry
+    - uv-build
   run:
     - python >={{ python_min }}
     - aiormq >=6.8,<7
