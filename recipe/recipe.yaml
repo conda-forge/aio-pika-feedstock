@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: aio-pika
-  version: "10.2.1"
+  version: "10.2.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: e4f77afd9179a3cca5a904c3b0a1190256a36d9f90650db908b1b2245eb27487
+  sha256: 80db36df038cc183c8e7e2f75c5991af6e0ad6a7a5c2e5c9a81d6bdde5488621
 
 build:
   number: 0
